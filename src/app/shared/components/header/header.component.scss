@@ -1,0 +1,44 @@
+
+
+/**/
+.active {
+    border-bottom: 2px solid rgba(94, 171, 255, 1);
+  }
+ul{
+    li{
+        a{
+            color: gray;
+            font-weight: 500;
+            font-size: 18px;
+        }
+    }
+    .number{
+        background-color: rgb(245, 136, 27);
+        color: white !important;
+        font-size: 20px;
+        font-weight: 800;
+        border-radius: 10px;
+        padding-inline: 20px;
+    
+    }
+    
+.number:hover{
+    background-color: rgb(24, 24, 24);
+    cursor: pointer;
+}
+    
+}
+
+.navbar{
+    height: 80px;
+}
+
+ 
+
+.nav-item a{
+  font-family: var(--popins);
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+}
+  
+

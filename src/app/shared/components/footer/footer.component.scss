@@ -1,0 +1,38 @@
+.row{
+    background-color: rgb(245, 136, 27);
+    color: white;
+}
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: var(--primary-color);
+    text-align: center;
+ 
+    color: white;
+    width: 100%;
+    .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap :40px;
+        padding: 100px 0;
+        .para{
+            p{
+                font-size: 30px;
+                font-weight: 700;
+                
+            }
+        }
+        
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap :40px;
+        padding: 100px 0;
+        color: white;
+        font-weight: 500;
+    }
+}
