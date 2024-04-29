@@ -1,3 +1,19 @@
+@mixin button {
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 8px;
+    padding: 20px 40px;
+    font-size: 16px;
+    font-weight: 600;
+
+    &:hover {
+        background-color: rgb(24, 24, 24);
+    }
+
+}
+
 .main {
     display: flex;
 
@@ -22,18 +38,7 @@
         }
 
         button {
-            border: none;
-            outline: none;
-            background-color: var(--primary-color);
-            color: white;
-            border-radius: 8px;
-            padding: 20px 40px;
-            font-size: 16px;
-            font-weight: 600;
-
-            &:hover {
-                background-color: rgb(24, 24, 24);
-            }
+            @include button();
 
         }
 
@@ -117,7 +122,7 @@
             text-align: center;
             align-items: center;
             gap: 20px;
-            width: 20%;
+            width: 310px;
 
             h5 {
                 font-size: 20px;
@@ -130,12 +135,8 @@
             }
 
             button {
-                background-color: var(--primary-color);
-                border: none;
-                outline: none;
-                border-radius: 5px;
-                color: white;
-                padding: 10px 15px;
+                @include button();
+
             }
         }
     }
@@ -145,11 +146,65 @@
 
 
 
+.main5 {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+
+    .left5 {
+        width: 40%;
+
+        button {
+            @include button();
+        }
+    }
+
+    .right {
+        width: 40%;
+        text-align: center;
+    }
+
+    .image5 {
+        width: 400px !important;
+        height: 550px !important;
+    }
+
+}
 
 
 
+.main6{
+    .iner{
+        width: 70%;
+        margin: auto;
+        padding: 100px;
+    }
+    width: 100%;
+    background-color:var(--primary-color);
+    text-align: center;
+    color: white;
+    h1{
+        font-size: 38px;
+        font-weight: 600;
+      font-style: italic
+    }
+    button{
+        @include button();
+        border: 1px solid white;
+    }
+}
 
 
+
+.main7{
+    background-image: url('../../../assets/Container.svg');
+    height: 700px;
+    width: 100%;
+}
 
 
 
@@ -163,7 +218,7 @@
     }
 
     .left,
-    .left2 {
+    .left2,.left5 {
         width: 100% !important;
     }
 
@@ -171,6 +226,10 @@
     .right2 {
         width: 100% !important;
     }
+    .iner{
+        width: 85% !important;
+    }
+
 
 
 }
@@ -182,8 +241,19 @@
         height: 500px !important;
     }
 
-    .image2 {
+    .image2,.image5 {
         width: 350px !important;
         height: 400px !important;
     }
+    .iner{
+        width: 95% !important;
+    }
+}
+@media (max-width:550px) {
+
+    .image5,.image,.image2 {
+        width: 300px !important;
+        height: 400px !important;
+    }
+
 }
