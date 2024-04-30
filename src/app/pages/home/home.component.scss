@@ -169,8 +169,8 @@
     }
 
     .image5 {
-        width: 400px !important;
-        height: 550px !important;
+        width: 400px ;
+        height: 550px ;
     }
 
 }
@@ -202,8 +202,24 @@
 
 .main7{
     background-image: url('../../../assets/Container.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 700px;
     width: 100%;
+    color: white;
+    .back{
+        width: 50%;
+        margin-left: 150px;
+        padding-top: 170px;
+        h1{
+            font-size: 38px;
+            font-weight: 700;
+            font-style: italic;
+        }
+        button{
+            @include button();
+        }
+    }
 }
 
 
@@ -228,6 +244,11 @@
     }
     .iner{
         width: 85% !important;
+        padding: 25px !important;
+    }
+    .back{
+        width: 80% !important;
+        margin: auto !important;
     }
 
 
@@ -247,6 +268,11 @@
     }
     .iner{
         width: 95% !important;
+        padding: 15px !important;
+    }
+    .back{
+        width: 90% !important;
+        margin: auto !important;
     }
 }
 @media (max-width:550px) {
@@ -254,6 +280,10 @@
     .image5,.image,.image2 {
         width: 300px !important;
         height: 400px !important;
+    }
+    .back{
+        width: 95% !important;
+        margin: auto !important;
     }
 
 }
