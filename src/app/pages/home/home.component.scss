@@ -13,7 +13,20 @@
     }
 
 }
-
+@mixin input{
+    width: 90%;
+    background-color: rgb(229, 207, 194);
+    border: none;
+    outline: none;
+    height: 48px;
+    margin: 10px 0;
+    padding-inline:10px ;
+    &::placeholder{
+        color:#E87700;
+       
+     
+    }
+}
 .main {
     display: flex;
 
@@ -221,6 +234,74 @@
         }
     }
 }
+
+
+
+
+.main8{
+    padding: 100px 0px;
+    background-color: rgb(240, 218, 194);
+    color: #E87700;
+    .parent{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        .des{
+            width: 20%;
+            h1{
+                font-size: 32px;
+                font-weight: 700;
+                font-style: italic;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+        ._right{
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            .left-form{
+                accent-color: rgb(232, 119, 0);
+                width: 45%;
+                input[type="text"]{
+                  @include input();
+                }
+                input[type="email"]{
+                    @include input();
+                }
+                select{
+                    @include input();
+                    color: #E87700;
+                    option{
+                          background-color: rgb(229, 207, 194);
+                          color: #E87700;
+                    }
+                }
+            }
+            .right-form{
+                width: 45%;
+                input{
+                    @include input();
+                }
+                button{
+                    width: 90%;
+                    @include button();
+                }
+            }
+           
+        }
+
+    }
+}
+
+
+
+
+
 
 
 
